@@ -1,0 +1,12 @@
+// Copyright 2023 QMK
+// SPDX-License-Identifier: GPL-2.0-or-later
+
+#define WS2812_PWM_DRIVER PWMD4
+#define WS2812_PWM_CHANNEL 4
+#define WS2812_PWM_PAL_MODE 2
+#define WS2812_PWM_DMA_STREAM STM32_DMA1_STREAM6
+#define WS2812_PWM_DMA_CHANNEL 2
+
+// #define WS2812_TIMING 1200
+// #define WS2812_T1H 900
+// #define WS2812_T0H 300
