@@ -37,18 +37,18 @@ led_config_t g_led_config = {
 };
 
 // Capslock LED
-bool led_update_kb(led_t led_state) {
-    bool res = led_update_user(led_state);
-    if (res) {
-        if (led_state.caps_lock) {
-            ws2812_set_color(46, 10, 10, 255); // Blue
-        } else {
-            ws2812_set_color_all(0, 0, 0);
-        }
-        ws2812_flush();
-    }
-    return res;
-}
+// bool led_update_kb(led_t led_state) {
+//     bool res = led_update_user(led_state);
+//     if (res) {
+//         if (led_state.caps_lock) {
+//             ws2812_set_color(46, 10, 10, 255); // Blue
+//         } else {
+//             ws2812_set_color(46, 0, 0, 0); // Off
+//         }
+//         ws2812_flush();
+//     }
+//     return res;
+// }
 
 bool rgb_matrix_indicators_kb(void) {
     if (!rgb_matrix_indicators_user()) {

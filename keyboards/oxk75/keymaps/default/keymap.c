@@ -42,6 +42,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     )
 };
 
+/* Encoder */
+
+#ifdef ENCODER_MAP_ENABLE
+const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {   // [][<encoder count>][<directions count>]
+    [0] = { ENCODER_CCW_CW(KC_VOLD, KC_VOLU) },
+    [1] = { ENCODER_CCW_CW(RM_HUED, RM_HUEU) }
+};
+#endif
+
 /* RGB Matrix */
 
 // void keyboard_post_init_user(void) {

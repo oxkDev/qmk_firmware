@@ -14,7 +14,8 @@
         "bootmagic": true,
         "extrakey": true,
         "mousekey": true,
-        "nkro": true
+        "nkro": true,
+        "encoder": true
     },
 
     "usb": {
@@ -245,5 +246,15 @@
                 {"matrix": [5, 15], "x": 15, "y": 5}
             ]
         }
+    },
+
+    "encoder": {
+        "rotary": [
+            {
+                "pin_a": "A0",
+                "pin_b": "A1",
+                "resolution": 4
+            }
+        ]
     }
 }
